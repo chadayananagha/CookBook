@@ -10,8 +10,25 @@
     <title>Cookbook/Recipes</title>
 </head>
 <body>
-    <header></header>
-    <main>
+    <header>
+        <header>
+            <nav class="bg-[#CBF1F5] flex justify-between">
+                <a href="./index.html">
+                    <div class="p-6 flex gap-2 font-bold">
+                        <img src="./images/icons8-food-bar-48.png" alt="logo" class="w-[40px] md:w-[50px]"><span class="pt-2 text-2xl">Cook Book</span>
+                    </div>
+                </a>
+                <div>
+                    <ul class="flex gap-4 p-8 text-2xl font-bold">
+                        <li class="visible md:hidden"><img src="./images/icons8-menü.svg" alt="menu" class="pt-1"/></li>
+                        <li class="hidden md:inline hover:text-[#265073] hover:underline underline-offset-8"><a href="./index.html">Home</a></li>
+                        <li class="hidden md:inline hover:text-[#265073] hover:underline underline-offset-8"><a href="./recipes.html">Recipes</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </header>
+    <main  class="bg-[#E3FDFD]">
         <!-- section1 -->
         <section>
             <div>
@@ -24,14 +41,45 @@
             </div>
         </section>
         <!-- section2 -->
-        <section>
-            <div>
-                <h2></h2>
-                <p></p>
-            </div>
-            <div>
-                <img/>
-                <button></button>
+        <section id='section2' class="mx-auto my-0">
+            <div class="flex flex-wrap lg:flex-nowrap justify-between bg-white py-6 mx-6 xl:mx-24 rounded-xl">
+                <div class="ps-4 xl:ps-24 pe-2">
+                    <h2 class="text-4xl font-bold pb-2">Dosa(Savory crepe)</h2>
+                    <h3 class="text-2xl font-bold pb-2">Ingredients</h3>
+                    <ul class="pb-8 list-disc ps-4">
+                        <li>1 cup Urad dal</li>
+                        <li>¼ cup Chana dal</li>
+                        <li>1 tsp Fenugreek seeds</li>
+                        <li>3 cup Sona masuri rice</li>
+                        <li>1 cup Rice Flakes, thin</li>
+                        <li>Water, for soaking</li>
+                        <li>2 tsp salt</li>
+                        <li>Butter, for roasting</li>
+                    </ul>
+                    <h3 class="text-2xl font-bold pb-2">Instructions</h3>
+                    <ol class="list-decimal ps-4">
+                        <li>Firstly, in a large bowl take 1 cup Urad dal, ¼ cup Chana dal and 1 tsp Fenugreek seeds.</li>
+                        <li>Rinse with water and soak for 3 hours.</li>
+                        <li>In another bowl rinse and soak 3 cup sona masuri rice for 5 hours.</li>
+                        <li>Drain off the urad dal and transfer to the grinder. you can use mixi if you are comfortable.</li>
+                        <li>Grind to smooth paste adding water as required.</li>
+                        <li>After grinding for 30 minutes, the batter will turn soft and fluffy.</li>
+                        <li>Scoop out urad dal batter and keep aside.</li>
+                        <li>In the same grinder add soaked rice and 1 cup rinsed poha.</li>
+                        <li>Also, add water as required and grind the batter.</li>
+                        <li>Grind to a slightly coarse batter. if you grind to a very smooth paste, then the dosa will be very soft and not crisp.</li>
+                        <li>Transfer the batter to the same vessel of urad dal batter.</li>
+                        <li>Mix well making sure everything is well combined.</li>
+                        <li>Cover and allow to ferment for 8 hours in a warm place.</li>
+                        <li>After 8 hours, the batter would have doubled indicating it is well fermented.</li>
+                        <li>Now mix the batter gently and use the batter to prepare dosa adding salt as required.</li>
+                        <li>Finally, the dosa batter can be stored in the refrigerator for up to a week and used to make weekly breakfast.</li>
+                    </ol>
+                </div>
+                <div class="pe-4 xl:pe-24 ps-4 pt-14">
+                    <img src="./images/dosa.webp" alt="dosaimage" class="w-[1000px] rounded-lg"/>
+                    <button id="button-section2" type="submit" class=" flex gap-1 rounded-md bg-[#59B4C3] text-lg font-bold mt-6 px-4 py-2 hover:bg-[#CBF1F5] ">Share <span><img src="./images/icons8-share-24.png" alt="share" class="pt-1"/></span></button>
+                </div>
             </div>
         </section>
         <!-- section3 -->
@@ -47,5 +95,11 @@
         </section>
     </main>
     <footer></footer>
+    <script>
+        document.querySelector('#button-section2').addEventListener('click',function()
+        {
+            alert('Share your recipe');
+        });
+    </script>
 </body>
 </html>
