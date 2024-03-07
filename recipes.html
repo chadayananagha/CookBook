@@ -18,10 +18,22 @@
                 </div>
             </a>
             <div>
-                <ul class="flex gap-4 p-8 text-2xl font-bold">
-                    <li class="visible md:hidden"><img src="./images/icons8-menü.svg" alt="menu" class="pt-1"/></li>
-                    <li class="hidden md:inline hover:text-[#265073] hover:underline underline-offset-8"><a href="./index.html">Home</a></li>
-                    <li class="hidden md:inline hover:text-[#265073] hover:underline underline-offset-8"><a href="./recipes.html">Recipes</a></li>
+                <ul class="flex gap-4 pt-8 pe-2 text-2xl font-bold">
+                    <li class="hidden lg:inline hover:text-[#265073] hover:underline underline-offset-8"><a href="./index.html">Home</a></li>
+                    <li class="hidden lg:inline hover:text-[#265073] hover:underline underline-offset-8"><a href="./recipes.html">Recipes</a></li>
+                    <li class="hidden lg:inline">   
+                        <form class="max-w-md mx-auto">   
+                            <div class="relative">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-6 pointer-events-none">
+                                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                                    </svg>
+                                </div>
+                                <input type="search" id="default-search" class="block w-[80%] mt-[-8px] p-4 ps-14 text-base text-black rounded-3xl dark:bg-gray-700" placeholder="Search recipes" required />
+                            </div>
+                        </form>
+                    </li>
+                    <li class="visible lg:hidden"><img src="./images/icons8-menü.svg" alt="menu" class="pt-1"/></li>
                 </ul>
             </div>
         </nav>
