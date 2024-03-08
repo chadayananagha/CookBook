@@ -10,19 +10,46 @@
     <title>Cookbook/Recipes</title>
 </head>
 <body>
-    <header></header>
-    <main class="bg-[#71C9CE]">
+    <header>
+        <nav class="bg-[#CBF1F5] flex justify-between font-['Libre_Baskerville']">
+            <a href="./index.html">
+                <div class="p-6 flex gap-2 font-bold">
+                    <img src="./images/icons8-food-bar-48.png" alt="logo" class="w-[40px] md:w-[50px]"><span class="pt-3 text-2xl">Cook Book</span>
+                </div>
+            </a>
+            <div>
+                <ul class="flex gap-4 pt-8 pe-2 text-2xl font-bold">
+                    <li class="hidden lg:inline hover:text-[#265073] hover:underline underline-offset-8"><a href="./index.html">Home</a></li>
+                    <li class="hidden lg:inline hover:text-[#265073] hover:underline underline-offset-8"><a href="./recipes.html">Recipes</a></li>
+                    <li class="hidden lg:inline">   
+                        <form class="max-w-md mx-auto">   
+                            <div class="relative">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-6 pointer-events-none">
+                                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                                    </svg>
+                                </div>
+                                <input type="search" id="default-search" class="block w-[80%] mt-[-8px] p-4 ps-14 text-base text-black rounded-3xl dark:bg-gray-700" placeholder="Search recipes" required />
+                            </div>
+                        </form>
+                    </li>
+                    <li class="visible lg:hidden"><img src="./images/icons8-menü.svg" alt="menu" class="pt-1"/></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="bg-[#E3FDFD] pt-8">
         <!-- section1 -->
         <section id='section1' class="mx-auto my-0 font-['Libre_Baskerville']">
-            <div class="flex flex-wrap lg:flex-nowrap justify-between bg-white py-6 mx-6 my-8 xl:mx-24 rounded-xl">
-                <div class="pe-4 xl:pe-24 ps-4 pt-14">
+            <div class="flex flex-wrap lg:flex-nowrap justify-between bg-white py-6 mx-6 mb-8 xl:mx-24 rounded-xl">
+                <div class="ps-4 pt-14">
                     <div class="relative overflow-hidden">
                         <img class="w-[1000px] rounded-lg" src="./images/BuffaloChicken.webp" alt="Buffalo Chicken tacos" />
                         <h2 class="flex justify-center items-center text-2xl font-black bg-[hsl(0,0%,98.4%,0.7)] absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden opacity-0 transition duration-300 ease-in-out hover:opacity-100 text-center">Buffalo Chicken Tacos</h2>
                     </div>
-                    <button id="button-section2" type="submit" class=" flex gap-1 rounded-md bg-[#59B4C3] text-lg font-bold mt-6 mb-4 px-4 py-2 hover:bg-[#CBF1F5] ">Share <span><img src="./images/icons8-share-24.png" alt="share" class="pt-1"/></span></button>
+                    <button id="button-section2" type="submit" class="flex gap-1 rounded-md bg-[#59B4C3] text-lg font-bold mt-6 px-4 py-2 hover:hover:bg-[#265073] hover:text-white">Share <span><img src="./images/icons8-share-24.png" alt="share" class="pt-1"/></span></button>
                 </div>
-                <div class="ps-4 xl:ps-24 pe-2">
+                <div class="ps-4 xl:ps-24 pe-4 xl:pe-24">
                     <h2 class="text-4xl font-bold pb-2">Buffalo Chicken Tacos</h2>
                     <h3 class="text-2xl font-bold pb-2">Ingredients:</h3>
                     <ul class="pb-8 list-disc ps-4">
