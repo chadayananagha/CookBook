@@ -48,7 +48,7 @@
                         <img class="w-[1000px] rounded-lg" src="./images/BuffaloChicken.webp" alt="Buffalo Chicken tacos" />
                         <h2 class="flex justify-center items-center text-2xl font-black bg-[hsl(0,0%,98.4%,0.7)] absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden opacity-0 transition duration-300 ease-in-out hover:opacity-100 text-center">Buffalo Chicken Tacos</h2>
                     </div>
-                    <button id="button-section2" type="submit" class="flex gap-1 rounded-md bg-[#59B4C3] text-lg font-bold mt-6 px-4 py-2 hover:hover:bg-[#265073] hover:text-white">Share <span><img src="./images/icons8-share-24.png" alt="share" class="pt-1"/></span></button>
+                    <button id="button-section1" type="submit" class="flex gap-1 rounded-md bg-[#59B4C3] text-lg font-bold mt-6 px-4 py-2 hover:hover:bg-[#265073] hover:text-white">Share <span><img src="./images/icons8-share-24.png" alt="share" class="pt-1"/></span></button>
                 </div>
                 <div class="ps-4 xl:ps-24 pe-4 xl:pe-24">
                     <h2 class="text-4xl font-bold pb-2">Buffalo Chicken Tacos</h2>
@@ -140,6 +140,10 @@
         <h3 class="text-xs opacity-70">Copyright WB049 - Group 4</h3>
     </footer>
     <script>
+        document.querySelector('#button-section1').addEventListener('click',function()
+        {
+            alert('Share your recipe');
+        });
         document.querySelector('#button-section2').addEventListener('click',function()
         {
             alert('Share your recipe');
